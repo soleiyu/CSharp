@@ -1,0 +1,64 @@
+﻿<Window x:Class="Narcissus_F2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="726" AllowsTransparency="True" WindowStyle="None"
+        Background="#2e2e30" ResizeMode="NoResize">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" MinWidth="26"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="r" HorizontalAlignment="Right" VerticalAlignment="Top" Width="25" Margin="0,1,1,0" Click="Button_Click" FontFamily="Marlett" Height="25" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <Button Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="213,1,-238,0" Click="Button_Click_1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontFamily="Marlett" Height="25" Grid.Column="2"/>
+        <Label Content="Narcissus F2" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFCDCDCD" Margin="10,-2,0,0" Background="{x:Null}" FontSize="14" Height="28" Width="96"/>
+        <Border BorderBrush="#FFFF8B00" BorderThickness="1" HorizontalAlignment="Left" Height="600
+                " VerticalAlignment="Top" Width="726
+                " Grid.ColumnSpan="2" Margin="0,0,0,-36">
+        </Border>
+
+        <TextBox x:Name="tb_ks1" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"  Width="41" RenderTransformOrigin="0.516,0.2" Background="{x:Null}" Foreground="White" TextChanged="tb_ks1_TextChanged" Margin="161,275,0,0" Text="0"/>
+
+        <Image x:Name="Picture1" HorizontalAlignment="Left" Height="201" VerticalAlignment="Top" Width="400" Margin="12,45,0,0" OpacityMask="#FFDC2B2B" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="#FF727272" BorderThickness="1" Height="201" VerticalAlignment="Top" Width="400" Margin="12,45,288,0">
+            <TextBox x:Name="tb_exePrint" TextWrapping="Wrap" Text="EXECUTE PRINT" Margin="415,0,-298,-285" IsEnabled="False" Background="#4C000000" Foreground="#FF52FFD8"/>
+        </Border>
+        <Label Content="SIN θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,272,0,0" Foreground="White" Height="25" Width="43"/>
+        <TextBox x:Name="tb_sin1" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" TextAlignment="Right"  Width="41" Margin="41,275,0,0" RenderTransformOrigin="0.516,0.2" Background="{x:Null}" Foreground="White" TextChanged="tb_sin1_TextChanged"/>
+        <TextBox x:Name="tb_sin2" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Right" Width="41" Margin="41,305,0,0" Background="{x:Null}" Foreground="White" TextChanged="tb_sin2_TextChanged"/>
+        <Label Content="SIN 2θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,302,0,0" Foreground="White" Height="25" Width="50"/>
+        <TextBox x:Name="tb_sin3" TextAlignment="Right" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="41" Margin="41,335,0,0" Background="{x:Null}" Foreground="White" TextChanged="tb_sin3_TextChanged"/>
+        <Label Content="SIN 3θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,332,0,0" Foreground="White" Height="25" Width="50"/>
+        <TextBox x:Name="tb_sin4" TextAlignment="Right" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="41" Margin="41,365,0,0" Background="{x:Null}" Foreground="White" TextChanged="tb_sin4_TextChanged"/>
+        <Label Content="SIN 4θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,362,0,0" Foreground="White" Height="25" Width="50"/>
+        <TextBox x:Name="tb_cos1" TextAlignment="Right" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="41" Margin="41,395,0,0" Background="{x:Null}" Foreground="White" TextChanged="tb_cos1_TextChanged"/>
+        <Label Content="COS θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,392,0,0" Foreground="White" Height="25" Width="57"/>
+        <TextBox x:Name="tb_cos2" TextAlignment="Right" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="41" Margin="41,425,0,0" Background="{x:Null}" Foreground="White" TextChanged="tb_cos2_TextChanged"/>
+        <TextBox x:Name="tb_cos3" TextAlignment="Right" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="41" Margin="41,455,0,0" Background="{x:Null}" Foreground="White" TextChanged="tb_cos3_TextChanged"/>
+        <TextBox x:Name="tb_cos4" TextAlignment="Right" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="41" Margin="41,485,0,0" Background="{x:Null}" Foreground="White" TextChanged="tb_cos4_TextChanged"/>
+        <Label Content="COS 2θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,422,0,0" Foreground="White" Height="25" Width="57"/>
+        <Label Content="COS 3θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,452,0,0" Foreground="White" Height="25" Width="57"/>
+        <Label Content="COS 4θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,482,0,0" Foreground="White" Height="25" Width="57"/>
+        <Button x:Name="b_reset" Content="Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,305,0,0" Background="{x:Null}" Foreground="#FFE47C00" Click="b_reset_Click"/>
+        <Button x:Name="b_play441" Content="441PLAY" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,335,0,0" Background="{x:Null}" Foreground="Red" Click="b_play441_Click"/>
+        <Button x:Name="b_gplay" Content="ScaleTest" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,365,0,0" Background="{x:Null}" Foreground="Red" Click="b_gplay_Click"/>
+        <Button x:Name="b_midiLoad" Content="Midi Load" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,395,0,0" Background="{x:Null}" Foreground="#FF00FF46" Click="b_midiLoad_Click"/>
+        <Button x:Name="b_midiPlay" Content="Midi Play" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,425,0,0" Background="{x:Null}" Foreground="#FF00FF17" Click="b_midiPlay_Click"/>
+        <TextBox x:Name="t_bpm" TextAlignment="Right" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="120" VerticalAlignment="Top" Width="41" Margin="41,544,0,0" Background="{x:Null}" Foreground="#FFB9FF00" TextChanged="t_bpm_TextChanged"/>
+        <Label Content="BPM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,541,0,0" Foreground="White" Height="25" Width="50"/>
+        <CheckBox x:Name="cb_skiller" Content="StrainKiller" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="168,550,0,0" Background="#FFC9FFB0" Foreground="#FFC8FF86" Checked="CheckBox_Checked"/>
+        <Label Content="KSIN θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,272,0,0" Foreground="White" Height="25" Width="57"/>
+        <TextBox x:Name="tb_ks2" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"  Width="41" RenderTransformOrigin="0.516,0.2" Background="{x:Null}" Foreground="White" TextChanged="tb_ks2_TextChanged" Margin="161,305,0,0" Text="0"/>
+        <TextBox x:Name="tb_ks3" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"  Width="41" RenderTransformOrigin="0.516,0.2" Background="{x:Null}" Foreground="White" TextChanged="tb_ks3_TextChanged" Margin="161,335,0,0" Text="0"/>
+        <TextBox x:Name="tb_ks4" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"  Width="41" RenderTransformOrigin="0.516,0.2" Background="{x:Null}" Foreground="White" TextChanged="tb_ks4_TextChanged" Margin="161,365,0,0" Text="0"/>
+        <Label Content="KSIN 4θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,362,0,0" Foreground="White" Height="25" Width="57"/>
+        <Label Content="KSIN 3θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,332,0,0" Foreground="White" Height="25" Width="57"/>
+        <Label Content="KSIN 2θ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,302,0,0" Foreground="White" Height="25" Width="57"/>
+        <Button x:Name="b_rand" Content="Random" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,278,0,0" Background="{x:Null}" Foreground="Cyan" Click="b_rand_Click"/>
+
+    </Grid>
+</Window>
