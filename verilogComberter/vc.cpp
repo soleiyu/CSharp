@@ -118,6 +118,7 @@ void mkfunction()
 			}
 		}
 	}
+	
 	fprintf(fpv, "else begin\n");
 	fprintf(fpv, "pg = 0; end\n");
 	fprintf(fpv, "endfunction\n\n");
@@ -146,10 +147,8 @@ void mkfunction()
 			}
 		}
 	}
+	
 	fprintf(fpv, "else begin\n");
 	fprintf(fpv, "pb = 0; end\n");
 	fprintf(fpv, "endfunction\n\n");
-
-
-
 }
