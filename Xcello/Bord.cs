@@ -26,7 +26,6 @@ namespace _6cello
                 bordInitMap2(num);
             else if (map == 3)
                 bordInitMap3(num);
-
         }
 
         public void bordInit(int num)
@@ -56,6 +55,7 @@ namespace _6cello
             bord[bordNum / 2, bordNum / 2 + 1] = 1;
             bord[bordNum / 2 + 1, bordNum / 2 + 1] = 2;
         }
+        
         public void bordInitMap2(int num)
         {
             bordNum = num;
@@ -91,6 +91,7 @@ namespace _6cello
             bord[bordNum / 2, bordNum / 2 + 1] = 1;
             bord[bordNum / 2 + 1, bordNum / 2 + 1] = 2;
         }
+        
         public void bordInitMap3(int num)
         {
             bordNum = num;
@@ -246,6 +247,7 @@ namespace _6cello
 
             return count;
         }
+        
         public int whiteCount()
         {
             int count = 0;
@@ -274,6 +276,7 @@ namespace _6cello
                 ofs++;
             }
         }
+        
         void change_LUP(Coord pos, int player)
         {
             if (check_LUP(pos, player) == 0)
@@ -335,6 +338,7 @@ namespace _6cello
                 ofs++;
             }
         }
+        
         void change_RDW(Coord pos, int player)
         {
             if (check_RDW(pos, player) == 0)
@@ -365,6 +369,7 @@ namespace _6cello
                 ofs++;
             }
         }
+        
         void change_LDW(Coord pos, int player)
         {
             if (check_LDW(pos, player) == 0)
@@ -402,6 +407,7 @@ namespace _6cello
 
             return ofs - 1;
         }
+        
         int check_LUP(Coord pos, int player)
         {
             int ofs = 1;
@@ -421,6 +427,7 @@ namespace _6cello
 
             return ofs - 1;
         }
+        
         int check_UPP(Coord pos, int player)
         {
             int ofs = 1;
@@ -440,6 +447,7 @@ namespace _6cello
 
             return ofs - 1;
         }
+        
         int check_RUP(Coord pos, int player)
         {
             int ofs = 1;
@@ -479,6 +487,7 @@ namespace _6cello
 
             return ofs - 1;
         }
+        
         int check_RDW(Coord pos, int player)
         {
             int ofs = 1;
@@ -498,6 +507,7 @@ namespace _6cello
 
             return ofs - 1;
         }
+        
         int check_DWN(Coord pos, int player)
         {
             int ofs = 1;
@@ -517,6 +527,7 @@ namespace _6cello
 
             return ofs - 1;
         }
+        
         int check_LDW(Coord pos, int player)
         {
             int ofs = 1;
